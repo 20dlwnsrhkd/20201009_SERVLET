@@ -13,12 +13,19 @@
 		</div>
 </div>	
 <div class="card bg-dark text-white">
-    <img src="image/top.jpg" class="card-img" alt="...">
+    <img src="image/volvo_movile_main_230907.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
-    <h5 class="card-title">그래픽 카드 이벤트</h5>
-    <p class="card-text">출처 : 다나와</p>
+    <h5 class="card-title">시승 이벤트</h5>
+    <p class="card-text">출처 : 엔카</p>
   </div>
  </div>
+<div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        지포스 3060 시리즈
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">지포스 3070 시리즈</a>
+      생략…. <!--이후 추가하기-->
+    </div>
 
 	<div class="container">
 		<div class="text-center">
