@@ -19,7 +19,7 @@
 	</div>
     
     <div>
-        <img src="image/textanim-kqyud.gif" class="img-fluid" alt="main_image">
+        <img src="image/kreamlogo.png" class="img-fluid" alt="main_image">
     </div>
     
 	<div class="container">

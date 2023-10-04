@@ -7,12 +7,13 @@ public class ProductRepository {
 	private ArrayList<Product> listOfProducts = new ArrayList<Product>(); // ArrayList를 Product로 캐스팅
 
 	public ProductRepository() {
-		Product phone = new Product("P1234", "iPhone 6s", 800000);
-		phone.setDescription("4.7-inch, 1334X750 Renina HD display, 8-megapixel iSight Camera");
-		phone.setCategory("Smart Phone");
-		phone.setManufacturer("Apple");
+		Product phone = new Product("GW8206", "아디다스 토바코 그루엔 메사 브라운 데저트", 139000);
+		phone.setDescription("출시일23/07/28");
+		phone.setCategory("shose");
+		phone.setManufacturer("Adidas");
 		phone.setUnitsInStock(1000);
 		phone.setCondition("New");
+        
         Product notebook = new Product("P1235", "LG PC 그램", 1500000);
 		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
 		notebook.setCategory("Notebook");
@@ -35,6 +36,18 @@ public class ProductRepository {
 		// listOfProducts.add(상품명);
 	}
 
+    public Product getProductByid(String productid) {
+        Product ProductByid = null;
+        
+        for (int i = 0; i < listOfProducts.size(); i++){
+            Product product = listOfProducts(i);
+            if (product != null && product.getProductid() != null && product.getProductid().equals(productid)){
+                productByid = product;
+                break;
+            }
+        }
+        return productByid;
+    }
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}
