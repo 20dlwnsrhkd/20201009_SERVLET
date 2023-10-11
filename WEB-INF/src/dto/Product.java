@@ -13,9 +13,19 @@ public class Product implements Serializable { // 인터페이스 선언
 	private String category; 	//분류
 	private long unitsInStock; //재고수 
 	private String condition; 	//신상품 or 중고품 or 재생품
+    private String filename; 	// 파일 이름 변수
+
     	public Product() {
 		super();
 	}
+
+    public void setFilename(String filename) { // 파일 이름 설정
+	this.filename = filename;
+}
+
+ public String getFilename() { // 파일 이름 리턴
+	return filename;
+}
 
 	public Product(String productId, String pname, Integer unitPrice) {
 		this.productId = productId;
