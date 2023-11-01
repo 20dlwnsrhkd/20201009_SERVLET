@@ -18,7 +18,7 @@ public class ProductRepository {
 		phone.setManufacturer("Adidas");
 		phone.setUnitsInStock(1000);
 		phone.setCondition("New");
-        phone.setFilename("P1234.png");
+        phone.setFilename("P1234.jpg");
 
         
         Product notebook = new Product("P1235", "나이키 에어포스 1 '07 WB 플랙스", 169000);
@@ -27,7 +27,7 @@ public class ProductRepository {
 		notebook.setManufacturer("adidas");
 		notebook.setUnitsInStock(1000);
 		notebook.setCondition("Refurbished");
-        phone.setFilename("P1235.png");
+        phone.setFilename("P1235.jpg");
 
 
 		Product tablet = new Product("P1236", "아디다스 삼바 OG 블랙 화이트 검", 135000);
@@ -36,7 +36,7 @@ public class ProductRepository {
 		tablet.setManufacturer("adidas");
 		tablet.setUnitsInStock(1000);
 		tablet.setCondition("Old");
-        phone.setFilename("P1236.png");
+        phone.setFilename("P1236.jpg");
 
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
