@@ -32,31 +32,23 @@
            <div class="form-group row">
 	<label class="col-sm-2">배송일</label>
 	<div class="col-sm-3">
-        <input name="shippingDate" type="date" class="form-control" id="shippingDate" />(yyyy/mm/dd)
-        <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 현재 날짜를 가져오는 함수
-    function getCurrentDate() {
-        const now = new Date();
-        const year = now.getFullYear();
-        const month = (now.getMonth() + 1).toString().padStart(2, '0');
-        const day = now.getDate().toString().padStart(2, '0');
-        return `${year}-${month}-${day}`;
-    }
-
-    // 현재 날짜 이후만 선택 가능하도록 설정
-    const shippingDateInput = document.querySelector('input[name="shippingDate"]');
-    shippingDateInput.min = getCurrentDate();
-});
-</script>
+        <input name="shippingDate" type="date" class="form-control" id="date" />(yyyy/mm/dd)
+        
 	</div>
 	  </div>
 	 <div class="form-group row">
-	   <label class="col-sm-2">국가명</label>
-	     <div class="col-sm-3">
-		<input name="country" type="text" class="form-control" />
-	    </div>
-	 </div>
+    <label for="country" class="col-sm-2">국가명</label>
+    <div class="col-sm-3">
+        <select id="country" name="country" class="form-control">
+            <option value="">국가를 선택하세요</option>
+            <option value="kr">대한민국</option>
+            <option value="us">미국</option>
+            <option value="jp">일본</option>
+            <option value="cn">중국</option>
+        </select>
+    </div>
+</div>
+
 	<div class="form-group row">
 	   <label class="col-sm-2">우편번호</label>
 	     <div class="col-sm-5">
@@ -142,5 +134,11 @@ document.addEventListener('DOMContentLoaded', function() {
   </form>
   </div>
 </body>
+    <script>
+var currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 1);
+var nextDate = currentDate.toISOString().substring(0, 10);
+document.getElementById('date').min = nextDate;
+</script>
 </html>
 
