@@ -40,9 +40,9 @@ public class ProductRepository {
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
-		listOfProducts.add(shoe3);
-		listOfProducts.add(shoe2);
 		listOfProducts.add(shoe1);
+		listOfProducts.add(shoe2);
+		listOfProducts.add(shoe3);
 		// listOfProducts.add(상품명);
 	}
 	public ArrayList<Product> getAllProducts() {

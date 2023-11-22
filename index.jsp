@@ -1,8 +1,3 @@
-
-
-<%
-    HelloWorld h = new HelloWorld();
-%>
 <html>
 <head>
     <%@ page contentType = "text/html;charset=utf-8" %>
