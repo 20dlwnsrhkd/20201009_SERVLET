@@ -1,8 +1,3 @@
-
-
-<%
-    HelloWorld h = new HelloWorld();
-%>
 <html>
 <head>
     <%@ page contentType = "text/html;charset=utf-8" %>
@@ -24,7 +19,7 @@
 	<%@ include file="body_main_ad.jsp" %>	
     <%@ include file="footer_ad.jsp" %>
     <script>
-	window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")
+	<!--window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")-->
 </script>
 
     

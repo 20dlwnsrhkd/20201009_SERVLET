@@ -1,6 +1,6 @@
 <html>
 <head>
-    <%@ page contentType = "text/html;charset=utf-8" %>
+    <%@ page contentType ="text/html;charset=utf-8" %>
     <%@ page import="example.*" %> 
     <%@ page import="java.util.Date"%>
     <%@ page buffer="1kb" autoFlush="true"%>
@@ -19,7 +19,7 @@
 	<%@ include file="body_main.jsp" %>	
     <%@ include file="footer.jsp" %>
     <script>
-	window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")
+<!--	window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")-->
 </script>
 
     
