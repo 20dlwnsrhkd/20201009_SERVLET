@@ -50,3 +50,56 @@ return false;
 
 document.newProduct.submit()
 }
+
+function CheckAddMember() {
+    // 아이디, 패스워드, 이메일 등 각 필드에 대한 유효성 검사
+    var id = document.getElementById("id").value.trim();
+    var password = document.getElementById("password").value.trim();
+    var passwordCheck = document.getElementById("password_check").value.trim();
+    var name = document.getElementById("name").value.trim();
+    var mail = document.getElementById("mail").value.trim();
+    var gender = document.getElementById("gender").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var address = document.getElementById("address").value.trim();
+
+    // 아이디는 최소 4자 이상
+    if (id.length < 4) {
+        alert("아이디는 최소 4자 이상이어야 합니다.");
+        return;
+    }
+
+    // 패스워드는 최소 6자 이상
+    if (password.length < 6) {
+        alert("패스워드는 최소 6자 이상이어야 합니다.");
+        return;
+    }
+
+    // 패스워드와 패스워드 재입력이 일치하는지 확인
+    if (password !== passwordCheck) {
+        alert("패스워드와 패스워드 재입력이 일치하지 않습니다.");
+        return;
+    }
+
+    // 이름은 최소 2자 이상
+    if (name.length < 2) {
+        alert("이름은 최소 2자 이상이어야 합니다.");
+        return;
+    }
+
+    // 이메일 형식 검사
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(mail)) {
+        alert("올바른 이메일 주소를 입력하세요.");
+        return;
+    }
+
+    // 전화번호 형식 검사 (숫자만 허용)
+    var phonePattern = /^\d+$/;
+    if (!phonePattern.test(phone)) {
+        alert("전화번호는 숫자만 입력 가능합니다.");
+        return;
+    }
+
+    // 유효성 검사가 성공하면 폼 제출
+    document.newMember.submit();
+}
