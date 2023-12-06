@@ -22,13 +22,13 @@
 <title>고객센터 게시판</title>
 <script type="text/javascript">
    function checkForm() {	
-      if (${sessionId==null}) {
-	alert("로그인 해주세요.");
-	location.href = "../login/login.jsp"
-	return false;
-   	}
-	location.href = "./BoardWriteForm.do?id=<%=sessionId%>"
-     }
+       if (${sessionId==null}) {
+           alert("로그인 해주세요.");
+           location.href = "../login/login_user.jsp"
+           return false;
+       }
+       location.href = "./BoardWriteForm.do?id=<%=sessionId%>"
+   }
 </script>
 </head>
 <body>

@@ -8,6 +8,7 @@ public class ShopTime {
         int hour = day.getHours(); // 시간
         int minute = day.getMinutes(); // 분
         int second = day.getSeconds(); // 초
+        hour = hour + 9; // 시간
         if (hour / 12 == 0) {
             am_pm = "AM"; // 오전 판단
         } else {

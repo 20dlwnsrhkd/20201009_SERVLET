@@ -14,9 +14,9 @@
         <img src="../image/kreamlogo.png" class="img-fluid" alt="main_image">
     </div>
     
-	<div class="container">
+	<div class="container" align="right">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="../index.jsp">상품목록(기본 홈)</a>
+			<a class="navbar-brand" href="../index.jsp" >상품목록(기본 홈) </a>
             <a class="navbar-brand" href="../login/login_user.jsp">로그인</a>
             <a class="navbar-brand" href="../menber/menber_join.jsp">회원가입</a>
             <a class="navbar-brand" href="/BoardListAction.do?pageNum=1">게시판(고객센터)</a>
